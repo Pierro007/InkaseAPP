@@ -1,0 +1,28 @@
+Card(
+  color: Colors.blueGrey, // Couleur de fond de la carte
+  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.0)),
+  elevation: 5,
+  margin: EdgeInsets.all(10),
+  child: Padding(
+    padding: EdgeInsets.all(15),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          username,
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            color: Colors.white, // Couleur du texte
+          ),
+        ),
+        SizedBox(height: 5),
+        Text(
+          description,
+          style: TextStyle(color: Colors.white70), // Couleur secondaire du texte
+        ),
+      ],
+    ),
+  ),
+)
+
